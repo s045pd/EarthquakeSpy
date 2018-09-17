@@ -1,4 +1,5 @@
 *Config.tmp.py
+.idea/
 .DS_Store
 app_$*
 __pycache__/
