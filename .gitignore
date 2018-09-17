@@ -1,0 +1,4 @@
+*Config.tmp.py
+.DS_Store
+app_$*
+__pycache__/
