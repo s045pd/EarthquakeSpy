@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('Longitude', models.FloatField()),
                 ('Latitede', models.FloatField()),
                 ('Deep', models.IntegerField()),
-                ('Adress', models.CharField(max_length=64)),
+                ('Address', models.CharField(max_length=64)),
             ],
         ),
         migrations.AlterUniqueTogether(

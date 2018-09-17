@@ -8,7 +8,7 @@ class EarthquakeCase(models.Model): # 定义模型
     Longitude = models.FloatField() # 经度字段
     Latitede = models.FloatField() # 维度字段
     Deep = models.IntegerField() # 深度字段
-    Adress = models.CharField(max_length=64) #地址字段
+    Address = models.CharField(max_length=64) #地址字段
 
     class Meta:
         unique_together = ("Longitude", "Latitede", "Time") # 建立组合唯一索引

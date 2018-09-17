@@ -18,10 +18,10 @@ class EarthquakeCaseViewSet(ModelViewSet):
     serializer_class = serializers.EarthquakeCaseSerializers # 定义序列化类
     pagination_class = DefaultPagination # 定义默认翻页参数
     filter_backends = (filters.SearchFilter, filters.OrderingFilter,) # 定义查询筛选方法
-    permission_classes = (IsAuthenticatedOrReadOnly,) # 定义访问认证控制
+    # permission_classes = (IsAuthenticatedOrReadOnly,) # 定义访问认证控制
     ordering_fields = '__all__' # 定义排序字段，__all__ 为通配
     search_fields = ('Level','Time','Longitude','Latitede','Deep','Adress') # 定义查询字段
-    renderer_classes = (AdminRenderer,) # 定义render类
+    # renderer_classes = (AdminRenderer,) # 定义render类
 
 
 class MakeChart(APIView):

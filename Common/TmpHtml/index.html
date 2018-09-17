@@ -117,7 +117,7 @@
 </head>
 
 <body class="text-center">
-    <a class="github-fork-ribbon" href="https://github.com/" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork
+    <a class="github-fork-ribbon" href="https://github.com/aoii103/EarthquakeSpy" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork
         me on GitHub</a>
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" id="apps">
         <header class="masthead mb-auto">
@@ -128,7 +128,7 @@
                     <a class="nav-link" href="/api/">API</a>
                     <a class="nav-link" href="/docs/">Docs</a>
                     <a class="nav-link" href="/auth/login/?next=/api/">Login</a>
-                    <a class="nav-link" href="#" @click="mapTypeSelected = mapTypeSelected=='world'?'china':'world' ">ChangeMe</a>
+                    <a class="nav-link" href="#" @click="mapTypeSelected = mapTypeSelected=='world'?'china':'world' ">ChangeArea</a>
                 </nav>
             </div>
         </header>
@@ -180,7 +180,7 @@
             {{ item.Level }},
             "{{item.Time}}",
             {{ item.Deep }},
-            "{{item.Adress}}",
+            "{{item.Address}}",
         ])
 
         {% endfor %}
@@ -191,7 +191,7 @@
                 titles: 'EarthQuakeSpy',
                 map: null,
                 mapOptions:null,
-                mapTypeSelected: 'china' ,
+                mapTypeSelected: 'world' ,
                 leveldatas: {}
             },
             watch: {
