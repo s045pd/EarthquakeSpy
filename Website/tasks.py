@@ -11,6 +11,7 @@ from pyquery import PyQuery as jq
 from Common.CompanyWeChat import WechatReports
 from Common.Config import WechatConf
 from Website.models import EarthquakeCase
+from django.db import IntegrityError
 
 asks.init('trio')
 MaxNum = 1
